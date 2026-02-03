@@ -32,26 +32,27 @@
     <div class="calculator p-4 col-md-6 col-lg-5">
 
         <h2 class="text-center mb-4">Arithmetic Calculator</h2>
-
+       <form name="myform">
         <div class="mb-3">
-            <input type="number" id="num1" class="form-control form-control-lg" placeholder="Enter number">
+            <input type="number" id="n1" class="form-control form-control-lg" placeholder="Enter number">
         </div>
 
         <div class="mb-3">
-            <input type="number" id="num2" class="form-control form-control-lg" placeholder="Enter number">
+            <input type="number" id="n2" class="form-control form-control-lg" placeholder="Enter number">
         </div>
 
         <div class="mb-4">
-            <button class="btn btn-success btn-calc me-2" onclick="calculate('+')">+</button>
-            <button class="btn btn-success btn-calc me-2" onclick="calculate('-')">-</button>
-            <button class="btn btn-success btn-calc me-2" onclick="calculate('*')">*</button>
-            <button class="btn btn-success btn-calc" onclick="calculate('/')">/</button>
+            <button class="btn btn-success btn-calc me-2" type="button" onclick="calculate('+')">+</button>
+            <button class="btn btn-success btn-calc me-2"type="button" onclick="calculate('-')">-</button>
+            <button class="btn btn-success btn-calc me-2" type="button" onclick="calculate('*')">*</button>
+            <button class="btn btn-success btn-calc"  type="button" onclick="calculate('/')">/</button>
+            <button class="btn btn-success btn-calc"  type="reset">Reset</button>
         </div>
 
         <div>
             <input type="text" id="result" class="form-control form-control-lg" placeholder="Result" readonly>
         </div>
-
+</form>
     </div>
 </div>
 
